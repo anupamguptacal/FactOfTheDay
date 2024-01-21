@@ -23,7 +23,7 @@ llm = ChatOpenAI(model_name=model_name)
 
 title_chain = LLMChain(llm=llm, prompt=title_template, verbose=True, output_key='title', memory=title_memory)
 d2 = date.today().strftime("%B %d, %Y")
-answer = title_chain.run({'topic':str(d2)})
+answer = title_chain.run({'date':str(d2)})
 with st.spinner('Please wait, Shubham, your fun fact is loading...'):
     time.sleep(5)
 st.write(answer)
