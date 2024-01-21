@@ -1,0 +1,7 @@
+os 
+langchain
+datetime
+streamlit as st
+langchain_community
+langchain_openai
+time
