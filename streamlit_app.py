@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 import time
 
-apikey="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"
+apikey=st.secrets["key"]
 os.environ["OPENAI_API_KEY"] = apikey
 st.title('🦜🔗 Shubham\'s Fun Fact Creator')
 
